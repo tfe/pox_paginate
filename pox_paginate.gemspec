@@ -5,31 +5,27 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pox_paginate}
-  s.version = "0.2.1"
+  s.version = "0.1.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sidu Ponnappa", "Niranjan Paranjape"]
-  s.date = %q{2010-09-14}
+  s.date = %q{2010-09-26}
   s.description = %q{Transparent support for pagination using WillPaginate with POX (Plain Old Xml) and ActiveResource. This gem is based on C42 Engineering's experience building largish distributed systems consisting of multiple Rails apps integrated over POX (Plain Old XML).}
   s.email = %q{opensource@c42.in}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
   s.files = [
-    ".rspec",
-     "CHANGELOG",
-     "Gemfile",
+    "CHANGELOG",
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "cruise_config.rb",
      "lib/pox_paginate.rb",
      "lib/pox_paginate/active_resource.rb",
      "lib/pox_paginate/active_resource/xml_format.rb",
      "lib/pox_paginate/active_support.rb",
      "lib/pox_paginate/active_support/core_hash_ext.rb",
      "lib/pox_paginate/remote_collection.rb",
-     "lib/pox_paginate/version.rb",
      "lib/pox_paginate/will_paginate.rb",
      "lib/pox_paginate/will_paginate/collection_extensions.rb",
      "lib/pox_paginate/xml_mini.rb",
@@ -37,7 +33,6 @@ Gem::Specification.new do |s|
      "lib/pox_paginate/xml_mini/libxml.rb",
      "lib/pox_paginate/xml_mini/nokogiri.rb",
      "lib/pox_paginate/xml_mini/rexml.rb",
-     "pox_paginate.gemspec",
      "spec/config/database.yml",
      "spec/db/migrate/001_create_oogas.rb",
      "spec/pox_paginate/active_resource/xml_format_spec.rb",
@@ -65,33 +60,24 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_runtime_dependency(%q<activeresource>, ["~> 3.0.0"])
-      s.add_runtime_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-      s.add_development_dependency(%q<activerecord>, ["~> 3.0.0"])
-      s.add_development_dependency(%q<sqlite3-ruby>, ["~> 1.3.1"])
-      s.add_development_dependency(%q<nokogiri>, ["~> 1.4.3.1"])
-      s.add_development_dependency(%q<libxml-ruby>, ["~> 1.1.4"])
+      s.add_runtime_dependency(%q<activesupport>, ["~> 2.3.5"])
+      s.add_runtime_dependency(%q<activeresource>, ["~> 2.3.5"])
+      s.add_runtime_dependency(%q<will_paginate>, ["~> 2.3.12"])
+      s.add_development_dependency(%q<rspec>, ["~> 1.3.0"])
+      s.add_development_dependency(%q<activerecord>, ["~> 2.3.5"])
     else
-      s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_dependency(%q<activeresource>, ["~> 3.0.0"])
-      s.add_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
-      s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-      s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
-      s.add_dependency(%q<sqlite3-ruby>, ["~> 1.3.1"])
-      s.add_dependency(%q<nokogiri>, ["~> 1.4.3.1"])
-      s.add_dependency(%q<libxml-ruby>, ["~> 1.1.4"])
+      s.add_dependency(%q<activesupport>, ["~> 2.3.5"])
+      s.add_dependency(%q<activeresource>, ["~> 2.3.5"])
+      s.add_dependency(%q<will_paginate>, ["~> 2.3.12"])
+      s.add_dependency(%q<rspec>, ["~> 1.3.0"])
+      s.add_dependency(%q<activerecord>, ["~> 2.3.5"])
     end
   else
-    s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-    s.add_dependency(%q<activeresource>, ["~> 3.0.0"])
-    s.add_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
-    s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-    s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
-    s.add_dependency(%q<sqlite3-ruby>, ["~> 1.3.1"])
-    s.add_dependency(%q<nokogiri>, ["~> 1.4.3.1"])
-    s.add_dependency(%q<libxml-ruby>, ["~> 1.1.4"])
+    s.add_dependency(%q<activesupport>, ["~> 2.3.5"])
+    s.add_dependency(%q<activeresource>, ["~> 2.3.5"])
+    s.add_dependency(%q<will_paginate>, ["~> 2.3.12"])
+    s.add_dependency(%q<rspec>, ["~> 1.3.0"])
+    s.add_dependency(%q<activerecord>, ["~> 2.3.5"])
   end
 end
 
